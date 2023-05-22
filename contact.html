@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <!-- Header starts -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <div class="logo">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <ul class="nav__list">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About us</a></li>
+              <li><a href="/projects.html">Projects</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="nav__inner__hamburger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__background">
+        <div class="container">
+          <div class="header__background__content">
+            <h1>Contact</h1>
+            <p>Get in Touch with Us</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="contact">
+          <h2 class="contact__heading">Contact Us</h2>
+          <div class="contact__content">
+            <div class="contact__left">
+              <form class="contact__form">
+                <div class="contact__flex">
+                  <div class="contact__field">
+                    <label for="name" class="contact__label">Full name</label>
+                    <input id="name" type="text" class="contact__input" />
+                  </div>
+                  <div class="contact__field">
+                    <label for="phone" class="contact__label"
+                      >Phone number</label
+                    >
+                    <input id="phone" type="tel" class="contact__input" />
+                  </div>
+                </div>
+                <div class="contact__field">
+                  <label for="email" class="contact__label"
+                    >E-mail adress</label
+                  >
+                  <input id="name" type="email" class="contact__input" />
+                </div>
+                <div class="contact__field">
+                  <label for="message" class="contact__label">Message</label>
+                  <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="contact__btn">Submit</button>
+              </form>
+            </div>
+            <div class="contact__right">
+              <div class="contact__right__row">
+                <span class="contact__icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <div class="contact__right__info">
+                  <p>London, 78 Kensington Park Road London W11 2PL</p>
+                </div>
+              </div>
+              <div class="contact__right__row">
+                <span class="contact__icon">
+                  <i class="fa-solid fa-at"></i>
+                </span>
+                <div class="contact__right__info">
+                  <a
+                    class="contact__right__email"
+                    href="mailto:ambrothersconstructionltd@gmail.com"
+                    >ambrothersconstructionltd@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact__right__row">
+                <span class="contact__icon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <div class="contact__right__info">
+                  <p><b>Maksym Hlavytska</b></p>
+                  <a class="contact__right__phone" href="tel:447466482555"
+                    >+44 7466 482555</a
+                  >
+                  <p><b>Artem Hlavitskyi</b></p>
+                  <a class="contact__right__phone" href="tel:447883781891"
+                    >+44 7883 781891</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Header ends -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <ul class="footer__nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">About us</a></li>
+            <li><a href="/index.html">Our projects</a></li>
+            <li><a href="/index.html">Contacts</a></li>
+          </ul>
+          <div class="footer__contacts">
+            <div class="footer__contacts__left">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam rerum eveniet itaque fugiat ad architecto, deleniti id
+                mollitia, deserunt a ipsa maxime, minima quos officiis.
+              </p>
+            </div>
+            <div class="footer__contacts__right">
+              <h6>Directors:</h6>
+              <p>Maksym Hlavytska</p>
+              <span>+44 7466 482555</span>
+              <p>Artem Hlavitskyi</p>
+              <span>+44 7883 781891</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrights">
+      <div class="container">
+        <p>All rights reserved © 2023</p>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector(".nav__inner__hamburger")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.querySelector(".nav__list").classList.toggle("open");
+        });
+    </script>
+  </body>
+</html>
